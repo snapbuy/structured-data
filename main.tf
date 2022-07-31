@@ -12,7 +12,8 @@ provider "aws" {
   region = "ap-northeast-2"
 }
 
-# Create a VPC
-resource "aws_vpc" "example" {
-  cidr_block = "10.0.0.0/16"
+# Create a instance
+resource "aws_instance" "nginx" {
+	key = ""
+  	cidr_block = "10.0.0.0/16"
 }

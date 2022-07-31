@@ -10,6 +10,8 @@ terraform {
 # Configure the AWS Provider
 provider "aws" {
   region = "ap-northeast-2"
+  access_key = ""
+  secrete_key = ""
 }
 
 # Create a instance

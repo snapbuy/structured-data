@@ -15,5 +15,7 @@ provider "aws" {
 # Create a instance
 resource "aws_instance" "nginx" {
 	key = ""
-  	cidr_block = "10.0.0.0/16"
+	ami = "ami-0fd0765afb77bcca7"
+	instance_type = "t2-micro"
+  	#cidr_block = "10.0.0.0/16"
 }
